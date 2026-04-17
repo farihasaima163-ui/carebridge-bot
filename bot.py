@@ -1,10 +1,11 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, ContextTypes, filters
 
-BOT_TOKEN = "8515404096:AAG8d1-vCfgSfQZgncdSoc2xNCfYxDjds-4"
+import os
+BOT_TOKEN = os.environ.get("8515404096:AAG8d1-vCfgSfQZgncdSoc2xNCfYxDjds-4")
 
 # Add your 5 admin IDs here
-ADMIN_IDS = [6687917006, 7612005461]
+ADMIN_IDS = [6687917006, 7612005461, 5281179398, 1865092522, 6281438127, 8579277904]
 
 # START MESSAGE
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
